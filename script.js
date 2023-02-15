@@ -16,11 +16,21 @@ convertButton.addEventListener("click", function (event) {
   console.log(Pounds);
   const Grams = document.getElementById("search").value / 0.001;
   console.log(Grams);
-  const Ounce = document.getElementById("search").value * 35.274;
-  console.log(Ounce);
+  const Ounces = document.getElementById("search").value * 35.274;
+  console.log(Ounces);
 
   const PrintedPounds = document.createElement("div");
   output.appendChild(PrintedPounds);
   PrintedPounds.id = "pounds-holder";
   PrintedPounds.innerText = Pounds;
+
+  const PrintedGrams = document.createElement("div");
+  output.appendChild(PrintedGrams);
+  PrintedGrams.id = "grams-holder";
+  PrintedGrams.innerText = Grams;
+
+  const PrintedOunces = document.createElement("div");
+  output.appendChild(PrintedOunces);
+  PrintedOunces.id = "ounces-holder";
+  PrintedOunces.innerText = Ounces;
 });
