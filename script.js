@@ -14,4 +14,8 @@ convertButton.addEventListener("click", function (event) {
   event.preventDefault();
   const Pounds = document.getElementById("search").value * 2.2046;
   console.log(Pounds);
+  const Grams = document.getElementById("search").value / 0.001;
+  console.log(Grams);
+  const Ounce = document.getElementById("search").value * 35.274;
+  console.log(Ounce);
 });
