@@ -9,5 +9,9 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
 
-let convertButton = document.getElementById("submit-btn");
-convertButton.addEventListener("click", function () {});
+const convertButton = document.getElementById("submit-btn");
+convertButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  const Pounds = document.getElementById("search").value * 2.2046;
+  console.log(Pounds);
+});
