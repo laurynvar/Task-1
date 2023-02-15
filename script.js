@@ -22,15 +22,18 @@ convertButton.addEventListener("click", function (event) {
   const PrintedPounds = document.createElement("div");
   output.appendChild(PrintedPounds);
   PrintedPounds.id = "pounds-holder";
-  PrintedPounds.innerText = Pounds;
+  PrintedPounds.innerText =
+    `Your entered kilograms are equal to ` + Pounds + ` Pounds (lb)`;
 
   const PrintedGrams = document.createElement("div");
   output.appendChild(PrintedGrams);
   PrintedGrams.id = "grams-holder";
-  PrintedGrams.innerText = Grams;
+  PrintedGrams.innerText =
+    `Your entered kilograms are equal to ` + Grams + ` Grams (g)`;
 
   const PrintedOunces = document.createElement("div");
   output.appendChild(PrintedOunces);
   PrintedOunces.id = "ounces-holder";
-  PrintedOunces.innerText = Ounces;
+  PrintedOunces.innerText =
+    `Your entered kilograms are equal to ` + Ounces + ` Ounces (oz)`;
 });
