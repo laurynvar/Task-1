@@ -18,4 +18,9 @@ convertButton.addEventListener("click", function (event) {
   console.log(Grams);
   const Ounce = document.getElementById("search").value * 35.274;
   console.log(Ounce);
+
+  const PrintedPounds = document.createElement("div");
+  output.appendChild(PrintedPounds);
+  PrintedPounds.id = "pounds-holder";
+  PrintedPounds.innerText = Pounds;
 });
